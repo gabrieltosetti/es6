@@ -11,11 +11,11 @@
         "no-console": 0,
         "indent": [
             "error",
-            2
+            3
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
