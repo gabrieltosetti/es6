@@ -1,10 +1,6 @@
 const Message = require('./message.model');
-const ImageMessage = require('./image-message.model');
 const fs = require('fs');
 const path = require('path');
-
-const emptyMessage = new Message();
-const emptyPhotoMessage = new ImageMessage();
 
 class MessageService {
   constructor() {
@@ -20,9 +16,8 @@ class MessageService {
         rejectPromise(err);
       } else {
         const dataArray = JSON.parse(data);
-        const dataObj = dataArray.map((item) => {
-          return new Message(item.text, item.created);
-        });
+        const dataObj = dataArray.map(item =>
+          new Message(item.text, item.created));
         resolvePromise(dataObj);
       }
     });
@@ -37,6 +32,6 @@ messagesService.messages.then((messages) => {
   for (let x = 0; x < messages.length; x++) {
     console.log(String(messages[x]));
   }
-}).catch(() => {
+}).catch((err) => {
   console.log(err);
 });
