@@ -8,6 +8,8 @@
         "no-console": 0,
         "max-len": [
             "error", 80
-        ]
+        ],
+        "linebreak-style": 0,
+        "prefer-const": 1
     }
 }
