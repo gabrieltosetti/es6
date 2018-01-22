@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "stricNullCheks": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
