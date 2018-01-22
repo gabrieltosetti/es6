@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "stricNullCheks": true,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
     "allowSyntheticDefaultImports": true
   }
 }

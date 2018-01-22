@@ -13,6 +13,9 @@
         ],
         "only-arrow-functions": [
             false
+        ],
+        "no-var-requires": [
+            false
         ]
     }
 }
